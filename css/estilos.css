@@ -1,0 +1,177 @@
+/* Variables CSS para colores y fuentes */
+:root {
+  --color-principal: #6c6bc2;
+  --color-fondo: #e9e9e9;
+  --color-texto: #222;
+  --color-link: #000;
+  --fuente-principal: "Arial", sans-serif;
+  --max-width: 1100px;
+  --padding-general: 1rem 2rem;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.5;
+}
+
+/* Contenedor centrado y margen horizontal */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--padding-general);
+}
+
+/* Header */
+header {
+  background-color: var(--color-principal);
+  padding: 2rem 0;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header img {
+  max-height: 70px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  flex-grow: 1;
+  margin-left: 1rem;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #ddd;
+  outline: none;
+}
+
+/* Main */
+main {
+  padding: 2rem 0;
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-principal);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* Text alignment utilities */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Secciones de productos o info */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Imágenes responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+/* Formularios */
+form {
+  max-width: 400px;
+  margin-left: auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: var(--fuente-principal);
+  margin-bottom: 1rem;
+  resize: vertical;
+}
+
+form input[type="submit"] {
+  background-color: var(--color-principal);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover,
+form input[type="submit"]:focus {
+  background-color: #5857b0;
+  outline: none;
+}
+
+/* Video centrado */
+.video-container {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  form {
+    margin: 0 auto;
+    width: 90%;
+  }
+}

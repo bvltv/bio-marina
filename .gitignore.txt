@@ -1,0 +1,16 @@
+# Ignorar archivos innecesarios
+.DS_Store
+Thumbs.db
+
+# Ignorar node_modules si usas JS
+node_modules/
+
+# Ignorar archivos temporales o IDE
+*.log
+*.tmp
+.vscode/
+.idea/
+
+# Ignorar archivos de sistema
+*.bak
+*.swp
